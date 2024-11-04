@@ -1,18 +1,18 @@
 function ReverseArray(array) {
-  let newArray = array;
+
 
   let i = 0;
-  let j = newArray.length - 1;
+  let j = array.length - 1;
   while (j > i) {
     let temp;
-    temp = newArray[i];
-    newArray[i] = newArray[j];
-    newArray[j] = temp;
+    temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
     j--;
     i++;
   }
 
-  console.log(newArray);
+  console.log(array);
 }
 
 let array = [10, 20, 30, 40, 50];
