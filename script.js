@@ -9,6 +9,10 @@ for (let i = 0; i < array.length; i++) {
       array[j] = array[j + 1];
       array[j + 1] = temp;
     }
+    else if(array.length < 3)
+    {
+        return null;
+    }
   }
 }
 
